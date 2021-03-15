@@ -1,4 +1,7 @@
 Unix
 Bash
 Git
-- Soft Skills
+Soft Skills
+Ciencia dos dados
+CSS
+
