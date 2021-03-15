@@ -5,6 +5,5 @@ A Trybe é uma escola de programaçao que utiliza a metodologia de ensino ativa.
 Além desses módulos terei um módulo final de Ciencia da Computacao.
 Aqui neste repositório estarao disponiveis todos os exercicios e projetos realizados durante o curso, que tem duracao de um ano.
 
-
-
 Sejam bem vindos e "vamo que vamo"!
+

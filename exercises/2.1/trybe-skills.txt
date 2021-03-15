@@ -1,5 +1,7 @@
 Unix
 Bash
 Git
-- Ciencia dos dados
-- CSS
+Soft Skills
+Ciencia dos dados
+CSS
+
