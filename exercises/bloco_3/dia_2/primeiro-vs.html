@@ -5,29 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendendo HTML</title>
+    <style>
+      h1{
+        font-size: 40px;
+        color: orange;
+        text-align: center;
+      }
+
+      h2{
+        font-size: 30px;
+        text-align: center;
+      }
+      .sobre{
+        font-size: 20px;
+        line-height: 15px;
+        text-align: center;
+      }
+      .foto-matheus{
+        width: 200px;
+      }
+     
+    </style>
   </head>
   <body>
     <h1>Meu primeiro HTML</h1>
     <h2>Sobre mim:</h2>
-    <p>
+    <p class="sobre">
       Me chamo Matheus Alexandre, estudante da Turma 11 em Desenvolvimento Web
       na Trybe! Se voce quiser saber mais sobre a Trybe
       <a href="https://www.betrybe.com/" target="_blank">clique aqui</a>.
     </p>
-    <br /><img
+    <br /><img class="foto-matheus"
       src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G8Q7S8-229867c01d90-512"
       alt="imagem do Matheus Alexandre"
-      width="100px"
+      
     />
     <h2>Que tal testar algumas tags?</h2>
-    <p>
+    <p class="sobre"> 
       Este é o meu primeiro HTML e o inínio da minha caminhada como
       <strong>desenvolvedor</strong>. <br /><br />Neste arquivo HTML treinarei
       as minhas primeiras tags. <br /><br />
       Bora fazer uma lista de alguns amigos que ja fiz na Trybe:
     </p>
 
-    <ol>
+    <ul>
       <li>
         <a href="#Marco">
           <strong>Marco Galindo</strong><br /><img
@@ -108,7 +129,7 @@
     />
   </a>
 </li>
-    </ol>
+    </ul>
     <p id="Marco">
       <strong>Marco Galindo</strong>: o Marco é aluno da Turma 11 de
       Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
