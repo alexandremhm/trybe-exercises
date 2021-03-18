@@ -6,45 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendendo HTML</title>
     <style>
-      h1{
+      h1 {
         font-size: 40px;
-        color: orange;
+        color: rgb(0, 0, 0);
         text-align: center;
       }
 
-      h2{
+      h2 {
         font-size: 30px;
-        text-align: center;
+        text-align: left;
+        text-decoration: underline;
       }
-      .sobre{
+      .sobre {
         font-size: 20px;
-        line-height: 15px;
-        text-align: center;
+        text-align: left;
+        
       }
-      .foto-matheus{
-        width: 200px;
+      .foto-matheus {
+        width: 300px;
       }
-     
+      body {
+        font-size: 10px;
+        background-color: rgb(200, 197, 150);
+        line-height: 30px;
+      }
+      p {
+        font-size: 2em;
+      }
     </style>
   </head>
   <body>
-    <h1>Meu primeiro HTML</h1>
+    <h1>Meu primeiro HTML com CSS</h1>
     <h2>Sobre mim:</h2>
     <p class="sobre">
       Me chamo Matheus Alexandre, estudante da Turma 11 em Desenvolvimento Web
-      na Trybe! Se voce quiser saber mais sobre a Trybe
+      na Trybe! <br>Se voce quiser saber mais sobre a Trybe
       <a href="https://www.betrybe.com/" target="_blank">clique aqui</a>.
     </p>
-    <br /><img class="foto-matheus"
+    <br /><img
+      class="foto-matheus"
       src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G8Q7S8-229867c01d90-512"
       alt="imagem do Matheus Alexandre"
-      
     />
     <h2>Que tal testar algumas tags?</h2>
-    <p class="sobre"> 
+    <p class="sobre">
       Este é o meu primeiro HTML e o inínio da minha caminhada como
-      <strong>desenvolvedor</strong>. <br /><br />Neste arquivo HTML treinarei
-      as minhas primeiras tags. <br /><br />
+      <strong>desenvolvedor</strong>. <br />Neste arquivo HTML treinarei
+      as minhas primeiras tags. <br />
       Bora fazer uma lista de alguns amigos que ja fiz na Trybe:
     </p>
 
@@ -85,56 +93,48 @@
           />
         </a>
       </li>
-    </a>
-</li>
-<li>
-  <a href="#Jhonata">
-    <strong>Jhonata Vieira</strong> <br /><img
-      src="https://ca.slack-edge.com/TMDDFEPFU-U01Q1B9JVH8-3076bc34fc92-512"
-      alt="imagem do Jhonata Vieira"
-      width="100px"
-    />
-  </a>
-</li>
-</a>
-</li>
-<li>
-  <a href="#Danilo">
-    <strong>Danilo Pereira</strong> <br /><img
-      src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G6L63W-e3af7db5a208-512"
-      alt="imagem do Danilo Pereira"
-      width="100px"
-    />
-  </a>
-</li>
-</a>
-</li>
-<li>
-  <a href="#Beatriz">
-    <strong>Beatriz Ramalho</strong> <br /><img
-      src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G6MWDS-8e4ea03c7f87-512"
-      alt="imagem da Beatriz Ramalho"
-      width="100px"
-    />
-  </a>
-</li>
-</a>
-</li>
-<li>
-  <a href="#Lucas">
-    <strong>Lucas Maestrelli</strong> <br /><img
-      src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G7H7GU-6ceec4d2f34a-512"
-      alt="imagem da Amandha Barok"
-      width="100px"
-    />
-  </a>
-</li>
+      <li>
+        <a href="#Jhonata">
+          <strong>Jhonata Vieira</strong> <br /><img
+            src="https://ca.slack-edge.com/TMDDFEPFU-U01Q1B9JVH8-3076bc34fc92-512"
+            alt="imagem do Jhonata Vieira"
+            width="100px"
+          />
+        </a>
+      </li>
+      <li>
+        <a href="#Danilo">
+          <strong>Danilo Pereira</strong> <br /><img
+            src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G6L63W-e3af7db5a208-512"
+            alt="imagem do Danilo Pereira"
+            width="100px"
+          />
+        </a>
+      </li>
+      <li>
+        <a href="#Beatriz">
+          <strong>Beatriz Ramalho</strong> <br /><img
+            src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G6MWDS-8e4ea03c7f87-512"
+            alt="imagem da Beatriz Ramalho"
+            width="100px"
+          />
+        </a>
+      </li>
+      <li>
+        <a href="#Lucas">
+          <strong>Lucas Maestrelli</strong> <br /><img
+            src="https://ca.slack-edge.com/TMDDFEPFU-U01Q7G7H7GU-6ceec4d2f34a-512"
+            alt="imagem da Amandha Barok"
+            width="100px"
+          />
+        </a>
+      </li>
     </ul>
     <p id="Marco">
       <strong>Marco Galindo</strong>: o Marco é aluno da Turma 11 de
       Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
-      juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de maneira
-      muito assertiva.
+      juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de
+      maneira muito assertiva.
     </p>
     <p id="Ghislaine">
       <strong>Ghislaine Latorraca</strong>: A Ghislaine é aluna da Turma 11 de
@@ -157,28 +157,28 @@
       legal o feedback dela sobre a minha apresentacao.
     </p>
     <p id="Jhonata">
-        <strong>Jhonata Vieira</strong>: o Jhonata é aluno da Turma 11 de
-        Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
-        juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de maneira
-        muito assertiva.
-      </p>
-      <p id="Danilo">
-        <strong>Danilo Pereira</strong>: o Danilo é aluno da Turma 11 de
-        Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
-        juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de maneira
-        muito assertiva.
-      </p>
-      <p id="Beatriz">
-        <strong>Beatiz Ramalho</strong>: A Beatriz é aluna da Turma 11 de
-        Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
-        juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de maneira
-        muito assertiva. Ela foi a nossa facilitadora!
-      </p>
-      <p id="Lucas">
-        <strong>Lucas Maestrelli</strong>: o Lucas é aluno da Turma 11 de
-        Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
-        juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de maneira
-        muito assertiva.
-      </p>
+      <strong>Jhonata Vieira</strong>: o Jhonata é aluno da Turma 11 de
+      Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
+      juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de
+      maneira muito assertiva.
+    </p>
+    <p id="Danilo">
+      <strong>Danilo Pereira</strong>: o Danilo é aluno da Turma 11 de
+      Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
+      juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de
+      maneira muito assertiva.
+    </p>
+    <p id="Beatriz">
+      <strong>Beatiz Ramalho</strong>: A Beatriz é aluna da Turma 11 de
+      Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
+      juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de
+      maneira muito assertiva. Ela foi a nossa facilitadora!
+    </p>
+    <p id="Lucas">
+      <strong>Lucas Maestrelli</strong>: o Lucas é aluno da Turma 11 de
+      Desenvolvimento Web da Trybe. <br />Na Dinamica em grupo que realizamos
+      juntos suas contribuicoes foram essenciais. <br />Sempre ponderando de
+      maneira muito assertiva.
+    </p>
   </body>
 </html>
