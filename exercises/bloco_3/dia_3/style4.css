@@ -8,7 +8,13 @@ ol {
 .primo {
     text-transform: uppercase;
 }
-
+.titles {
+    color: red;
+}
+.title-italic{
+    font-size: 40px;
+    border: 1px solid black;
+}
 
 /*
 
