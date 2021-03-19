@@ -1,0 +1,35 @@
+
+      h1 {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 30px;
+        text-align: left;
+        text-decoration: underline;
+      }
+      .sobre {
+        font-size: 20px;
+        text-align: left;
+        
+      }
+      #foto-matheus {
+        width: 300px;
+        b
+      }
+      body {
+        font-size: 10px;
+        background-color: rgb(200, 197, 150);
+        line-height: 30px;
+      }
+      
+      p {
+        font-size: 2em;
+      }
+
+      .border-circle{
+        border-radius: 100%;
+      }
+   
