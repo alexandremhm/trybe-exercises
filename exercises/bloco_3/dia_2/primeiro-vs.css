@@ -15,15 +15,21 @@
         text-align: left;
         
       }
-      .foto-matheus {
+      #foto-matheus {
         width: 300px;
+        b
       }
       body {
         font-size: 10px;
         background-color: rgb(200, 197, 150);
         line-height: 30px;
       }
+      
       p {
         font-size: 2em;
+      }
+
+      .border-circle{
+        border-radius: 100%;
       }
    
