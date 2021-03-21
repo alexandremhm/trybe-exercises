@@ -25,17 +25,11 @@ li{
 span{
     font-weight: 600;
 }
-ul:nth-of-type(1) :nth-child(1){
+ul:nth-of-type(1) :nth-child(-n+3){
     color: blue;
 }
-ul:nth-of-type(1) :nth-child(2) {
-    color: blue;
-}
-ul:nth-of-type(1) :nth-child(3) {
-    color: blue;
 
-}
-ul li span{
+li[value*="Java"]{
     background-color: pink;
 }
 a:hover[href*="stack"]{
