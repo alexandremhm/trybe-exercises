@@ -2,33 +2,60 @@ ol {
     background-color: yellow;
 } 
 
-.par {
+.primo{
     color: green;
 }
-.primo {
+ol li:nth-child(odd){
     text-transform: uppercase;
 }
+
 .titles {
     color: red;
 }
+
 .title-italic{
     font-size: 40px;
     border: 1px solid black;
 }
+
+
 li{
     font-size: 20px;
 }
 span{
     font-weight: 600;
 }
-.first-3{
+ul:nth-of-type(1) :nth-child(1){
     color: blue;
 }
-li:contains(Java){
-    color: red;
+ul:nth-of-type(1) :nth-child(2) {
+    color: blue;
 }
+ul:nth-of-type(1) :nth-child(3) {
+    color: blue;
 
-
+}
+ul li span{
+    background-color: pink;
+}
+a:hover[href*="stack"]{
+    font-weight: 600 ;
+    color: orange;
+}
+a:hover[href*="w3schools"]{
+    font-weight: 600 ;
+    color: green;
+}a:hover[href*="mozilla"]{
+    font-weight: 600 ;
+    color: black;
+}a:hover[href*="devdocs"]{
+    font-weight: 600 ;
+    color: yellow;
+}
+a:hover[href*="trybe"]{
+    font-weight: 600 ;
+    color: green;
+}
 /*
 
 1 - Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado primo, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
