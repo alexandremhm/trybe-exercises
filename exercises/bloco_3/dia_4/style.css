@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+  }
+  ul.podium{
+      text-align: center;
+  }
+  
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+  }
+  h3{
+      text-align: center;
+  }
+  ul.first-preis li{
+    display: inline;        
+}  
+  ul.first-preis {
+      text-align: center;
+           
+  }
+  ul.second-preis li{
+    display: inline;
+      
+  }
+  ul.second-preis{
+    text-align: center;  
+  }
+  ul.third-preis li{
+    display: inline;
+     
+  }
+  ul.third-preis{
+    text-align: center;  
+  }
