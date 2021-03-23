@@ -1,14 +1,14 @@
 
-ul.links li{
-    display: inline-block;
-    padding-left:20px ;
-    padding-right: 20px;
-    font-size: 25px;
-    color: black;
-    border: 1px solid black;
-    border-radius: 100%;
+nav button{
+    border-radius: 5px;
+    width: 100px;
     background-color: #E3F2FD;
-    min-width: 50px;
+    margin-bottom: 25px;    
+}
+    
+th{
+    background-color: #d3d3d3;
+    border: 1px solid black;
 }
 h1{
     font-size: 50px;
@@ -48,7 +48,7 @@ header{
     margin-left: 100px;
 }
 
-table, th, td{
+table, td{
     border: 1px solid black;
     padding: 10px;
     max-width: 96,25px;
@@ -66,9 +66,9 @@ th.classification-title{
     
     }
 .images{
-    width: 300px;
+    width: 400x;
     padding: 25px;
-}
+    }
 
 
 .text{
