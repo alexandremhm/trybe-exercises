@@ -9,28 +9,30 @@ ol {
 } 
 
 .primo{
-    color: green;
-}
-ol li:nth-child(odd){
     text-transform: uppercase;
 }
+ol li:nth-child(even){
+    color: green;
+}
+ol li em{
+    font-weight: 600;
+}
 
-.titles {
+h3{
     color: red;
 }
 
-.title-italic{
+h1 em{
     font-size: 40px;
     border: 1px solid black;
+    color:red
 }
 
 
 li{
     font-size: 20px;
 }
-span{
-    font-weight: 600;
-}
+
 ul:nth-of-type(1) :nth-child(-n+3){
     color: blue;
 }
