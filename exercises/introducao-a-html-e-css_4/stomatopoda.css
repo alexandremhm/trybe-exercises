@@ -1,0 +1,91 @@
+
+ul.links li{
+    display: inline-block;
+    padding-left:20px ;
+    padding-right: 20px;
+}
+header{
+    text-align: center;
+    margin-left: 50px;    
+}
+.title-one{
+    margin-left: 170px;
+    margin-top: 100px;
+}
+.subtitle-one{
+    margin-left: 130px;
+}
+.section-infos{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid red;
+    margin-left: 50px;
+}
+.classification{
+    display: inline-block;
+    border: 1px solid red;
+    margin-bottom: 200px;
+    margin-left: 100px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 96,25px;
+    font-size: 20px;
+    }
+
+span{
+    font-size: 20px;
+}
+    
+th.classification-title{
+    border: none;
+    display: block;
+    
+    }
+.images{
+    width: 300px;
+    padding: 25px;
+}
+
+
+.text{
+    max-width: 450px;
+    font-size: 25px;
+    
+}
+
+.environmental-section{
+    display: inline-block;
+    border: 1px solid red;
+    margin-left: 100px;
+}
+
+.video-section{    
+    display: inline-block;    
+    text-align: center;
+    border: 1px solid red;
+    margin-left: 300px;
+    margin-bottom: 150px;
+    position: absolute;
+   }
+.references{
+    max-width: 100%;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.references ul li{
+    list-style-type: none;
+}
+
+.eyes-section{
+    text-align: center;
+    border: 1px solid red;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+
