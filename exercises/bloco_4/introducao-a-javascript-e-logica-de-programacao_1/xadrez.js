@@ -5,25 +5,25 @@ let res = chessPiece.toLowerCase();
 
 switch (res){
     case "king":
-      console.log("One square in any direction");
+      console.log(res, "=> one square in any direction");
       break;
     case "queen":
-      console.log("Diagonally, horizontally, or vertically any number of squares");
+      console.log(res, "=> diagonally, horizontally, or vertically any number of squares");
       break;
     case "rooks":
-      console.log("Horizontally or vertically any number of squares");
+      console.log(res, "=> horizontally or vertically any number of squares");
       break;
     case "bishops":
-      console.log("Diagonally any number of square");
+      console.log(res, "=> diagonally any number of square");
       break;
     case "kinights":
-      console.log("In an ‘L’ shape");
+      console.log(res, "=> in an ‘L’ shape");
       break;
     case "pawns":
-      console.log("Vertically forward one square");
+      console.log(res, "=> vertically forward one square");
       break;
     default:
-      console.log("Wtf, this chess I don't know")
+      console.log(res, "=> wtf, this chess I don't know")
     
 
 }
