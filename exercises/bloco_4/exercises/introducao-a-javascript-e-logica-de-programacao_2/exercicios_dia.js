@@ -72,3 +72,13 @@ for (index = 0; index < numbers.length; index += 1){
         smallerNum = numbers[index];
     }
 } console.log(smallerNum);
+
+//Exercicio 8
+
+let arrFor = [];
+for (index = 0; index <= 25; index += 1){
+    arrFor.push(index);
+}
+console.log(arrFor);
+
+
