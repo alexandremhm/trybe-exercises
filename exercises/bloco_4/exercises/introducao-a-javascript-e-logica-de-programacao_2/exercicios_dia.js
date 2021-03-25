@@ -58,7 +58,7 @@ for (index = 0; index < numbers.length; index += 1){
     }
     
 } if(oddNumbers === 0) {
-    console.log("Nenhum valor ímpar encontrado");
+    console.log('Nenhum valor ímpar encontrado');
 } else {
     console.log(oddNumbers);
 }
@@ -124,7 +124,12 @@ console.log(numbers);
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let newArray = [];
 
-for (index = 0; index < numbers.length; index += 1) {
-    newArray.push(numbers[index] * numbers[index +1]);
+for (index = 0; index < numbers.length; index += 1) {    
+        if (numbers[index + 1]) {
+            newArray.push(numbers[index] * numbers[index +1]);
+                    } else {
+            newArray.push(numbers[index] * 2);
+        }
 }
+
 console.log(newArray);
