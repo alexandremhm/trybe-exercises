@@ -81,4 +81,12 @@ for (index = 0; index <= 25; index += 1){
 }
 console.log(arrFor);
 
+//Exercicio 9
 
+let arrFor = [];
+for (index = 0; index <= 25; index += 1){
+    arrFor.push(index);
+}
+for (number = 0; number < arrFor.length; number += 1) {
+    console.log (number / 2);
+}
