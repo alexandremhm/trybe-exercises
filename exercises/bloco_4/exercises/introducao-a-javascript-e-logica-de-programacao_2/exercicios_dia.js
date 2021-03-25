@@ -91,6 +91,15 @@ for (number = 0; number < arrFor.length; number += 1) {
     console.log (number / 2);
 }
 
+// Exercicio 9 outra maneira
+
+let arrFor = [];
+for (index = 0; index <= 25; index += 1){
+    arrFor.push(index/2);
+}
+console.log(arrFor);
+
+
 //Exercicio bonus 1
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
