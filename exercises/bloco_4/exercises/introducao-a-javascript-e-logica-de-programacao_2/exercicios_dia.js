@@ -90,3 +90,41 @@ for (index = 0; index <= 25; index += 1){
 for (number = 0; number < arrFor.length; number += 1) {
     console.log (number / 2);
 }
+
+//Exercicio bonus 1
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for (let index = 1; index < numbers.length; index += 1){
+    for (let indexDois = 0; indexDois < index; indexDois += 1) {
+        if  (numbers[index] < numbers[indexDois]) {
+            let position = numbers[index];
+            numbers[index] = numbers[indexDois];
+            numbers[indexDois] = position;                        
+        }
+    }
+} 
+console.log(numbers);
+
+//Exercicio bonus 2
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for (let index = 1; index < numbers.length; index += 1){
+    for (let indexDois = 0; indexDois < index; indexDois += 1) {
+        if  (numbers[index] > numbers[indexDois]) {
+            let position = numbers[index];
+            numbers[index] = numbers[indexDois];
+            numbers[indexDois] = position;                        
+        }
+    }
+} 
+console.log(numbers);
+
+//Exercicio bonus 3
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let newArray = [];
+
+for (index = 0; index < numbers.length; index += 1) {
+    newArray.push(numbers[index] * numbers[index +1]);
+}
+console.log(newArray);
