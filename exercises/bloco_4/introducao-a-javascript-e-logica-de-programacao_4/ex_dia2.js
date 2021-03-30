@@ -85,11 +85,33 @@ function repeatNumberFinder (arrInt) {
 
 function sumNumber (number) {
   let sum = 0;
-  for (let index = 1; index <= number; number += 1){
+  for (let index = 1; index <= number; index += 1){
     sum = sum + index;
   } 
   return sum;
 } 
 
 console.log(sumNumber(5));
-    
+
+// 7-Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+
+function strVerfyer (word, ending){
+    let compareToWord = ''
+    for (let index = word.length - 1; index >= word.length - ending.length; index -= 1){
+        compareToWord = compareToWord + word[index]        
+    } 
+    compareToWord = compareToWord.split('').reverse().join('')    
+
+    if (compareToWord === ending){
+        return true;
+    } else{
+        return false;
+    }
+} 
+console.log(strVerfyer('trybe', 'be'));
+console.log(strVerfyer('trybe', 'bo'));
+console.log(strVerfyer('abelha', 'elha'));
+console.log(strVerfyer('paralelepipedo', 'pipedo'));
+console.log(strVerfyer('escola', 'lula'));
+
+
