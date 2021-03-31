@@ -1,4 +1,4 @@
-A Trybe é uma escola de programaçao que utiliza a metodologia de ensino ativa. Neste curso estudarei o desenvolvimento de aplicaçoes web em 3 modulos:
+<h1> A Trybe é uma escola de programaçao que utiliza a metodologia de ensino ativa. Neste curso estudarei o desenvolvimento de aplicaçoes web em 3 modulos:</h1>
 1- Fundamentos de desenvolvimento web;
 2- Desenvolvimento Front-end;
 3- Desenvolvimento Back-end;
