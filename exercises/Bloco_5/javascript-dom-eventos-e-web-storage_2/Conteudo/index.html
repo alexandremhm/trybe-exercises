@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div id="paiDoPai">
+  <div id="pai">
+    <div id="primeiroFilho"></div>
+    <div id="elementoOndeVoceEsta"></div>
+      <div id="primeiroFilhoDoFilho"></div>
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    <div id="quartoEUltimoFilho"></div>
+  </div>
+</div>
+<script>
+  let elementoPai = document.querySelector('#elementoOndeVoceEsta').parentNode;
+  elementoPai.style.color = 'red';
+  console.log(elementoPai)
+
+  let childOne = document.querySelector('#pai').firstElementChild;
+  console.log(childOne);
+
+  let childOne2 = document.querySelector('#elementoOndeVoceEsta').previousElementSibling;  
+  console.log(childOne2)
+
+  let primeiroFilhoDeMuitos = document.querySelector('#elementoOndeVoceEsta').nextElementSibling;  
+  primeiroFilhoDeMuitos.innerHTML = 'Eu sou o primeiro filho do filho varios filhos';
+  console.log(primeiroFilhoDeMuitos);
+
+  let textWarning = document.querySelector('#elementoOndeVoceEsta').nextElementSibling.nextElementSibling.nextSibling;
+  console.log(textWarning);
+
+  let childThree = document.querySelector('#elementoOndeVoceEsta').parentNode.parentNode.lastElementChild.previousElementSibling;
+  console.log(childThree);
+  
+  let childThree2 = document.querySelector('#pai').parentNode.lastElementChild.previousElementSibling;
+  console.log(childThree2);
+
+  let father = document.querySelector('#pai');
+  let brotherElement = document.createElement('div');
+  father.appendChild(brotherElement);
+  console.log(father)
+
+  let currentElement = document.querySelector('#elementoOndeVoceEsta');
+  let currentElementChild = document.createElement('p');
+  currentElement.appendChild(currentElementChild);
+  console.log(currentElement);
+
+  let firstFirstChild = document.querySelector('#elementoOndeVoceEsta').nextElementSibling;
+  let childOfFirstFirstChild = document .createElement('span');
+  firstFirstChild.appendChild(childOfFirstFirstChild);
+  console.log(firstFirstChild);
+
+  let childOfFirstSun = document.querySelector('#primeiroFilhoDoFilho').firstElementChild.parentNode.nextSibling.nextSibling
+  console.log(childOfFirstSun)
+
+
+//Remova todos os elementos da página, menos pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+let divPai = document.querySelector('#pai');
+divPai.removeChild(divPai.firstElementChild);
+console.log(divPai);
+
+let divPai2 = document.querySelector('#elementoOndeVoceEsta');
+divPai2.removeChild(divPai2.lastElementChild);
+console.log(divPai2);
+
+
+
+
+</script>
+  
+</body>
+</html>
