@@ -170,22 +170,54 @@ dayTask();
 
 // bonus - Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
 
-function appointment () {
-  let taskInputText = document.querySelector('.task-input');
-  let buttonAppointment = document.querySelector('#btn-add');
-  let taskList = document.querySelector('.task-list-container')
-  buttonAppointment.addEventListener('click', function (){
-    if (taskInputText.innerText === '') {
-      alert('Erro, campo vazio!')
+
+let buttonAppointment = document.querySelector('#btn-add');
+
+buttonAppointment.addEventListener('click', function (){
+
+  let taskInputText = document.querySelector('#task-input').value;
+  let taskList = document.querySelector('.task-list-container');
+  if (!taskInputText) {
+    alert('Erro, campo vazio!');
+  } else {
+    let liAppointment = document.createElement('li');
+    taskList.appendChild(liAppointment);
+    liAppointment.innerText = taskInputText
+  }
+  
+})
+
+  // inputTag.addEventListener('keypress', pressEnter); 
+
+//   let taskInputEnter = document.querySelector('#task-input').value;
+//   console.log(taskInputEnter)
+//   taskInputEnter.event.keycode('keypress', function(event){    
+//   let taskList = document.querySelector('.task-list-container');
+//   if (event.keycode === 13) {
+//     if (!taskInputEnter) {
+//       alert('Erro, campo vazio!');
+//     } else {
+//       let liAppointment = document.createElement('li');
+//       taskList.appendChild(liAppointment);
+//       liAppointment.innerText = taskInputText;
+//     }
+//   }
+// })
+
+let taskInputEnter = document.querySelector('#task-input');
+let taskList = document.querySelector('.task-list-container');
+
+taskInputEnter.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    if (!taskInputEnter.value) {
+      alert('Erro, campo vazio!');
     } else {
       let liAppointment = document.createElement('li');
-      taskList.appendChild(liAppointment);
-      liAppointment.innerText = taskInputText.innerText
-
+      liAppointment.innerText = taskInputEnter.value;
+      taskList.appendChild(liAppointment);      
     }
-  })
-}
+  }
+});
 
-
-// Escreva seu código abaixo. 
+ 
 
