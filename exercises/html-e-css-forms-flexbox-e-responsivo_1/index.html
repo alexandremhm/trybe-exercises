@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Formulário de Inscrição</title>
   </head>
   <body>
-    <form>
+    <header>
+      <h1>Formulário de Inscrição</h1>
+    </header>
+    <form method="GET">
       <label for="nome-completo">
         Nome-completo
         <input
@@ -17,6 +20,7 @@
           required
           id="nome-completo"
           placeholder="Digite seu nome completo"
+          name="nome"
         />
       </label>
       <br />
@@ -28,18 +32,20 @@
           id="user-email"
           placeholder="Digite seu email"
           required
+          name="email"
         />
       </label>
       <br />
       <label for="user-cpf">
         CPF
         <input
-          type="number"
-          maxlength="11"
+          type="text"
+          maxlength= '11'
           required
           id="user-cpf"
           placeholder="Digite seu CPF, apenas números"
           required
+          name="cpf"
         />
       </label>
       <br />
@@ -52,6 +58,7 @@
           id="user-adress"
           placeholder="Digite seu endereço completo"
           required
+          name="endereco"
         />
       </label>
       <br />
@@ -64,15 +71,21 @@
           id="user-city"
           placeholder="Digite sua cidade"
           required
+          name="cidade"
         />
       </label>
       <br />
       <label
         >Selecione seu Estado
-        <select name="estado" id="drop-down-estado"></select>
+        <select name="estado" id="drop-down-estado" name="estado"></select>
       </label>
       <br />
-      <br />
+      <label
+      >Tipo de moradia
+      <input type="radio" name="type" id="type-home" required> Casa
+      <input type="radio" name="type" id="type-home"> Apartamento
+      <br/>
+      <button type="submit" name="botao-enviar">Enviar formulário</button>
     </form>
     <script src="script.js"></script>
   </body>
