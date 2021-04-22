@@ -99,13 +99,12 @@ fridayNight.addEventListener('click', function () {
 
 
 function dayZoom () {
-  let daysContainerZoom = document.querySelector('#days');
+  const daysContainerZoom = document.querySelector('#days');
   daysContainerZoom.addEventListener('mouseover', function (daysZoomEvent) {
     let dayEvent = daysZoomEvent.target;
-    dayEvent.style.fontSize = '30px';
+    dayEvent.style.fontSize = '25px';
   })  
-    let daysContainerZoom2 = document.querySelector('#days');
-    daysContainerZoom2.addEventListener('mouseout', function(daysZoomOutEvent) {
+    daysContainerZoom.addEventListener('mouseout', function(daysZoomOutEvent) {
     let dayEvent2 = daysZoomOutEvent.target;
     dayEvent2.style.fontSize = '20px';
   })
