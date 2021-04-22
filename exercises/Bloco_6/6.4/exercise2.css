@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+@media screen and (max-width:1343px){
+  .container header p {
+    font-size: 60px;
+    text-align: center;
+  }
+  .container header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 30px;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .aside-one ul li{
+    font-size: 30px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .aside-two ul li{
+    font-size: 30px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+  }
+  .main-content p {
+    font-size: 30px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  footer p{
+    font-size: 30px;
+    padding: 0 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:768px) and (min-width:400px){
+  .container header p {
+    font-size: 40px;
+    text-align: center;
+  }
+  .container header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 30px;
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .aside-one ul li{
+    font-size: 22px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .aside-two ul li{
+    font-size: 22px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 27px;
+    padding: 10px;
+    text-align: center;
+  }
+  .main-content p {
+    font-size: 22px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  footer p{
+    font-size: 22px;
+    padding: 0 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:400px){
+  .container header p {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+  .container header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 30px;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .aside-one ul li{
+    font-size: 18px;
+        
+  }
+
+  .aside-two ul li{
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+  .main-content p {
+    font-size: 18px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  footer p{
+    font-size: 18px;
+    padding: 0 15px;
+    text-align: center;
+  }
+}
