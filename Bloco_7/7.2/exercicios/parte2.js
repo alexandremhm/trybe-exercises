@@ -99,4 +99,4 @@ const verifyKeyValue = (object, key, value) => {
   
 }
 
-console.log(verifyKeyValue(lesson3, 'turno', 'noite'))
+console.log(verifyKeyValue(lesson1, 'turno', 'noite'))
