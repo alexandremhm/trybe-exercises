@@ -2,11 +2,11 @@
 
 const assert = require('assert');
 
-const greetPeople = (people) => {
+const greetPeople = (parameter) => {
   let greeting = 'Hello ';
   let newArr = [];
-  for (const person in people) {
-    let personInPeople = people[person]
+  for (const person in parameter) {
+    let personInPeople = parameter[person]
     newArr.push(`${greeting}${personInPeople}`)
   }
   return newArr;
