@@ -22,7 +22,7 @@ assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]) //funciona do
 
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]) //funciona do modo esperado
 
-assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4, 5]) //- Nao funciona do modo esperado
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]) //funciona do modo esperado
 
 
 

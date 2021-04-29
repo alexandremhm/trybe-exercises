@@ -16,4 +16,4 @@ const parameter = ['Irina', 'Ashleigh', 'Elsa'];
 const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
 const output = greetPeople(parameter);
 
-assert.strictEqual(output, result);
+assert.deepStrictEqual(output, result);
