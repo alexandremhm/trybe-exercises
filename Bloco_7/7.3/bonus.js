@@ -3,7 +3,6 @@ const assert = require('assert');
 function getChange(payable, paid) {
   const coins = [200, 100, 50, 20, 10, 5, 2, 1];
   const change = [];
-  const { length } = coins;  
   let sum = 0
   let remaining = paid - payable;     
     for (let index = 0; index < coins.length; index += 1) {
