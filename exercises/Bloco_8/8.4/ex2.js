@@ -66,6 +66,12 @@ const books = [
   },
 ];
 
+// function allNames () {
+//   books.reduce((name, elemento) => {
+
+//   }, '')
+// }
+
 
 function allNames() {
 const newArr = books.map((book) => book.author.name);
