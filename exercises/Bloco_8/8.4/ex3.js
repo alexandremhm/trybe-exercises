@@ -75,9 +75,18 @@ const sum = ((result, value) => result = (result + value));
 const expectedResult = 43;
 
 function averageAge() {
-  const agesArr = books.map((book) => book.releaseYear - book.author.birthYear);
-  const sumAges = agesArr.reduce(sum, 0);
-  return sumAges/agesArr.length;
+  const ageArr = books.reduce((result, value) => {
+    result.push(value.releaseYear - value.author.birthYear)
+    return result;
+  }, [])
+  return ageArr.reduce(sum)/ageArr.length
 }
+
+
+// function averageAge() {
+//   const agesArr = books.map((book) => book.releaseYear - book.author.birthYear);
+//   const sumAges = agesArr.reduce(sum, 0);
+//   return sumAges/agesArr.length;
+// }
 
 assert.strictEqual(averageAge(), expectedResult);

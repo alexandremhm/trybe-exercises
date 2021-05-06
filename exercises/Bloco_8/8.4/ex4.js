@@ -75,12 +75,16 @@ const expectedResult = {
   releaseYear: 1991,
 };
 
-const getBiggerStr = (result, value) => ((result.length > value.length) ? result : value);
-
 function longestNamedBook() {
- const bookName = books.map((book) => book.name);
- const biggerNameBook = bookName.reduce(getBiggerStr, 0);
- return books.find((book) => book.name === biggerNameBook);
+  return books.reduce((acc, book) => (acc.name.length > book.name.length) ? acc : book);
 }
+
+// const getBiggerStr = (result, value) => ((result.length > value.length) ? result : value);
+
+// function longestNamedBook() {
+//  const bookName = books.map((book) => book.name);
+//  const biggerNameBook = bookName.reduce(getBiggerStr, 0);
+//  return books.find((book) => book.name === biggerNameBook);
+// }
 
 assert.deepStrictEqual(longestNamedBook(), expectedResult);

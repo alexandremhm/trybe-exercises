@@ -8,16 +8,9 @@ const names = [
   'Abeladerco', 'Adieidy', 'Alarucha',
 ];
 
-
 function containsA() {
-  const arrLetters = names.toString().split('');
- return arrLetters.reduce((acc, letter) => {
-    if(letter === 'A' || letter === 'a') {
-      return acc += 1
-    }
-    return acc;
-  }, 0)
-  
+ const arrLetters = names.toString().toLowerCase().split('');
+ return arrLetters.reduce((acc, letter) => (letter === 'a') ? acc += 1: acc, 0)  
 }
 
 assert.deepStrictEqual(containsA(), 20);

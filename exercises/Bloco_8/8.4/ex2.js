@@ -65,20 +65,20 @@ const books = [
     releaseYear: 1928,
   },
 ];
-
-// function allNames () {
-//   books.reduce((name, elemento) => {
-
-//   }, '')
-// }
+// Crie uma string com os nomes de todas as pessoas autoras.
 
 
-function allNames() {
-const newArr = books.map((book) => book.author.name);
-const newStr = newArr.reduce((name, elemento) => name += `, ${elemento}`)
-const phrase = `Nomes: ${newStr}`;
-return `${phrase}.`
+function allNames () {
+  return books.reduce((name, elemento, index) => (index < books.length - 1) ?`${name}${elemento.author.name}, `:`${name}${elemento.author.name}.`, 'Nomes: ');
 }
+
+
+// function allNames() {
+// const newArr = books.map((book) => book.author.name);
+// const newStr = newArr.reduce((name, elemento) => name += `, ${elemento}`)
+// const phrase = `Nomes: ${newStr}`;
+// return `${phrase}.`
+// }
 
 assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');
 
