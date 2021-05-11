@@ -13,7 +13,7 @@ const sendMarsTemperature = (callback) => {
   setTimeout(() => {
     const temperature = getMarsTemperature();
     callback(temperature);
-  }, 5000);
+  }, messageDelay());
 }
 
 
