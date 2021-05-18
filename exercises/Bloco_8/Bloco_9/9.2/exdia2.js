@@ -11,11 +11,11 @@ const promiseNumber = () => {
   const sum = newArr.reduce((acc, number) => acc += number, 0);
 
   if (sum < 8000) {
-    return resolve(sum)
+    resolve(sum)
   }
-   return reject(); 
+    reject();
 
-  })  
+  })
 
 }
 
