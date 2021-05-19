@@ -19,7 +19,22 @@ const users = {
     return findUserById(userID).then(user => user.name);
   };
 
+
   describe('Exercicio 2', () => {
+    it('found the user by searching for id', () => {
+      return findUserById(4).then(data => {
+        expect(data).toEqual({ name: 'Mark' });
+      })
+    })
+
+    it("didn't found any user with this id", () => {
+      return findUserById(6).catch(error => {
+        expect(error).toEqual({ error: 'User with 6 not found.' })
+      })  
+    })
+  })
+
+  describe('Exercicio 3', () => {
     it('found the user by searching for id', async () => {
       const findUser = await findUserById(4);
       expect(findUser).toEqual({ name: 'Mark' })
