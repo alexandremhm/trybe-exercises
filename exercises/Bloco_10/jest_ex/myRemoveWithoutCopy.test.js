@@ -14,8 +14,8 @@ describe('Exercicio 3 - myRemoveWithoutCopy function', () => {
     expect(myRemoveWithoutCopy(arrayTest)).toEqual(arrayTest);
   });
 
-  test('myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna [1, 2, 3, 4, 5]', () => {
-    expect(myRemoveWithoutCopy(arrayTest, 5)).toEqual([1, 2, 3, 4, 5]);
+  test('myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna [1, 2, 3, 4]', () => {
+    expect([1, 2, 3, 4]).toEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5));
   });
  
 });

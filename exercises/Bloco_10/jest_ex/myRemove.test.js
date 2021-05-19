@@ -15,6 +15,6 @@ describe('Exercicio 2 - myRemove function', () => {
   });
 
   test('myRemove(arrayTest, 5) equal [1, 2, 3, 4, 5]', () => {
-    expect([1, 2, 3, 4, 5]).toEqual(myRemove(arrayTest, 5));
+    expect([1, 2, 3, 4]).toEqual(myRemove(arrayTest, 5));
   });
 });
