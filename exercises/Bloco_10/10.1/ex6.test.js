@@ -34,9 +34,9 @@ const findAnimalByName = (name) => (
   })
 );
 
-const getAnimal = (name) => {
-  return findAnimalByName(name).then(object => object)
-};
+const getAnimal = (name) => (
+  findAnimalByName(name).then(object => object)
+);
 
 const findAnimalByAge = (age) => (
   new Promise((resolve, reject) => {
