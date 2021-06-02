@@ -38,7 +38,9 @@ async fetchApi() {
     const { loading, userEmail, userLastName, userName, userPhoto } = this.state;
     return (
       <div className="App">
-        { loading === true ? <Loading /> : <div> 
+        { loading === true 
+        ? <Loading /> 
+        : <div> 
           <p>{userName}</p>
           <p>{userLastName}</p>
           <p>{userEmail}</p>
