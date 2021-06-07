@@ -19,6 +19,10 @@ class App extends Component {
     this.fetchApi();
   }
 
+  shouldComponentUpdate(_a, b) {
+    return b.age < 50
+  }
+
 async fetchApi() {
   this.setState( { loading: true },
     async () => {
@@ -30,6 +34,7 @@ async fetchApi() {
       userLastName: requestObject.results[0].name.last,
       userEmail: requestObject.results[0].email,
       userPhoto: requestObject.results[0].picture.large,
+      age: requestObject.results[0].dob.age
   })
   })  
  }
