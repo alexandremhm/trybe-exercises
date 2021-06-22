@@ -16,6 +16,7 @@ ol li:nth-child(even){
 }
 ol li em{
     font-weight: 600;
+    border: 5px solid red;
 }
 
 h3{
