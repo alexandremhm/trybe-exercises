@@ -15,7 +15,7 @@ const authReducer = (state = defaultState, action) => {
     case 'LOGIN':
      return action.type = { authenticated:true }
      break;
-case 'LOGOUT':
+      case 'LOGOUT':
      return action.type = { authenticated:false }
      default: return state
      break;
