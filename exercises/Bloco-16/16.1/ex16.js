@@ -20,8 +20,8 @@ const immutableReducer = (state = defaultState, action) => {
     case 'ONLINE':
   const newObj = Object.assign({ }, defaultState, {
   status: 'online',
-})  
-  return newObj 
+})
+  console.log(newObj) 
       
     default:
       return state;
